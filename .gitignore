@@ -18,3 +18,9 @@ npm-debug.log*
 # env
 .env
 .env.*
+
+# 本地未加密构建产物（含明文博客，不入库）
+dist_pub/
+
+# 个人书签备份（含浏览记录等隐私，不入库）
+java面试网站书签.html

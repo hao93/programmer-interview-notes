@@ -71,8 +71,6 @@ export SITE_PASSWORD
 # 否则 Git Bash 的 /c/... 形式路径会被 Windows node 误解成 C:\c\...（双重前缀）。
 node scripts/encrypt-site.mjs
 unset SITE_PASSWORD
-# 清理产物中可能存在的无关残留文件，避免公开无关内容
-rm -f dist/java面试网站书签.html
 
 # ---------- 发布 gh-pages（相对路径的 orphan worktree，规避 Windows 盘符双重前缀） ----------
 # 第一步：清掉所有历史残留/幻影 worktree（跳过首个=主工作区，绝不误删源码）
